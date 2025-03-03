@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construcción USA</title>
+
+<style>
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+background-color:  white;
+color: #333;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+nav {
+display: flex;
+justify-content: right;
+background-color: #444;
+padding: 10px 0;
+}
+
+nav a {
+color: #ff6347;
+text-decoration: none;
+margin: 0 15px;
+font-size: 18px;
+transition: color 0.3s;
+}
+
+nav a:hover {
+color: white;
+}
+
+.hero {
+background-image: url('https://via.placeholder.com/1500x600');
+background-size: cover;
+background-position: center;
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-align: center;
+}
+
+.hero h1 {
+font-size: 48px;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 20px;
+border-radius: 10px;
+}
+
+.content {
+padding: 20px;
+text-align: center;
+}
+
+.content h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.content p {
+font-size: 18px;
+line-height: 1.6;
+}
+
+p {
+text-align: center;
+}
+
+a{
+  text-align: right;
+}
+
+form {
+max-width: 400px;
+margin: 0 auto;
+text-align: left;
+}
+
+form input, form textarea, form button {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+}
+
+form button {
+background-color: #333;
+color: #fff;
+cursor: pointer;
+}
+
+form button:hover {
+background-color: #ff6347;
+
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="content" id="contactanos">
+<h2>Contáctanos</h2>
+<p>¿Tienes alguna pregunta o quieres trabajar con nosotros? No dudes en contactarnos.</p>
+</div>
+
+<form action="contact_form.php" method="POST">
+<label for="nombre">Nombre:</label>
+<input type="text" name="nombre" placeholder="" required>
+<label for="nombre">Teléfono:</label>
+<input type="tel" name="telefono" placeholder="" required>
+<label for="nombre">Email:</label>
+<input type="email" name="email" placeholder="" required>
+<label for="nombre">Mensaje:</label>
+
+<textarea name="mensaje" placeholder="" required></textarea>
+
+<button type="submit">Enviar</button>
+</form>
+</div>
+</body>
+</html>
